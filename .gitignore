@@ -1,0 +1,41 @@
+# ---------- PyInstaller ----------
+build/
+dist/
+*.manifest
+# 不忽略 PDFtoJPG.spec, 让 build 可复现
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---------- venv (本仓库不带虚拟环境) ----------
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+.venv/
+venv/
+env/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- 用户运行时产物 ----------
+.pdftojpg.ini
+output/
+output_*/
+
+# ---------- 用户私有 PDF (input/ 仅保留示例 .gitkeep) ----------
+input/*
+!input/.gitkeep
+
+# ---------- 系统垃圾 ----------
+Thumbs.db
+.DS_Store
+desktop.ini
